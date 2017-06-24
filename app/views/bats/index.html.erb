@@ -1,0 +1,11 @@
+<div class="container">
+  <h1>Bats</h1>
+  <% @bats.each do |bat| %>
+
+  	<div>
+  		Name: <%= bat.name %> <br>
+  		Description: <%=  bat.description %>
+  	</div>
+
+  <% end %>
+</div>
