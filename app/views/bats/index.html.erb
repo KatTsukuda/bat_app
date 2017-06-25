@@ -1,11 +1,12 @@
 <div class="container">
+  <div>
   <h1>Bats</h1>
   <% @bats.each do |bat| %>
 
   	<div>
   		Name: <%= bat.name %> <br>
   		Description: <%=  bat.description %>
-  	</div>
+  	</div><br>
 
   <% end %>
 </div>
