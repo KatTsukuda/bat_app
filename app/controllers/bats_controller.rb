@@ -13,8 +13,14 @@ class BatsController < ApplicationController
     bat_params = params.require(:bat).permit(:name, :description)
     @bat = Bat.new(bat_params)
     if @bat.save
-      redirect_to "/bat"
+      redirect_to post_path(post.id)
     end
+  end
+
+  def show
+    id = params[:id]
+    @bat = Bat.find(id)
+    render :show
   end
 
 end

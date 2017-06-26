@@ -1,9 +1,9 @@
 <div class="container">
-  <div>
-  <h1>Bats</h1>
+  <header><h1>Bats</h1></header>
   <% @bats.each do |bat| %>
 
   	<div>
+      ID: <%= bat.id %> <br>
   		Name: <%= bat.name %> <br>
   		Description: <%=  bat.description %>
   	</div><br>
