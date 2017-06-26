@@ -1,4 +1,9 @@
 <div class="container-fluid">
+  <h3> Edit <%= @bat.name %> </h3>
   Name: <%= @bat.name %> <br>
   Description: <%= @bat.description %>
+  <br><br>
+  <%= link_to "Edit", edit_bat_path(@bat), class: "btn btn-default" %>
+  <br><br>
+  <%= button_to "Delete", @bat, method: :delete, class: "btn btn-default" %>
 </div>

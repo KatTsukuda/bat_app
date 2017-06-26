@@ -5,10 +5,9 @@ class BatsController < ApplicationController
   end
 
   def create
-    bat_params = params.require(:bat).permit(:name, :description)
-    @bat = Bat.new(bat_params)
-    if @bat.save
-      redirect_to "/bats/#{bat.id}"
+    bat = Bat.new(bat_params)
+    if bat.save
+      redirect_to bat_path(bat)
     end
   end
 

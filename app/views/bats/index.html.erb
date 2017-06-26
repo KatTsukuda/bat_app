@@ -10,7 +10,5 @@
       Name: <%= bat.name %> <br>
       Description: <%= bat.description %>
     </div><br>
-    <%= button_to "Edit", { action: "edit", id: bat.id }, method: :edit, data: { confirm: "Are you sure?" }, :class => "btn btn-danger" %><br>
-    <%= button_to "Delete", bat, method: :delete, :class => "btn btn-danger" %><br>
   <% end %>
 </div>
